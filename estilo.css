@@ -1,0 +1,184 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif;
+    background-color: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../exercicio/img/banner.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    margin: 0; /* Adiciona margem zero para consistência */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.paragrafo{
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    color: #45474B;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #F5F7F8;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transições suaves para efeitos de hover */
+}
+
+section button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem;
+    height: 46vh;
+    overflow-y: auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
+.imagem-receita {
+    width: 100%; /* Ajusta para preencher a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 300px; /* Define uma largura máxima */
+    border-radius: 0.6rem; /* Arredonda as bordas da imagem */
+    margin-top: 1rem; /* Espaçamento acima da imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+    margin-left: 300px;
+    text-emphasis: center;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: #222831;
+    margin: 0.5rem 0; /* Adiciona margens para espaçamento */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none;
+    color: #30475E;
+    transition: color 0.3s; /* Transição suave para o hover */
+}
+
+.item-resultado a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B;
+    margin: 0.5rem 0;
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8;
+    color: #45474B;
+    text-align: center;
+    padding: 0.5rem; /* Adicionado padding para melhor espaçamento */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: 1rem;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    section input {
+        width: 25rem;
+        padding: 0.8rem;
+    }
+
+    .resultados-pesquisa {
+        width: 40rem;
+        height: 40vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    section input {
+        width: 17rem;
+    }
+
+    section button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .resultados-pesquisa {
+        width: 90%;
+        height: 50vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
